@@ -2,9 +2,10 @@ from PIL import Image, ImageDraw
 import numpy as np
 from scipy.spatial import cKDTree
 from sklearn.cluster import KMeans
+import os
 
 # input
-image_name='marte-NASA.jpg'
+image_name='giove.jpg'
 
 colori_filo=15
 dim_punto = 10 #ogni quanti pixel tiro la linea
@@ -30,6 +31,10 @@ image_array_reshape=np.unique(image_array.reshape((image_array.shape[0]*image_ar
 
 groups=km.fit(image_array_reshape)
 palette_array=groups.cluster_centers_
+
+#aggiungo comunque il nero e il bianco
+white_black=np.array([(255,255,255),(0,0,0)])
+palette_array=np.concatenate((palette_array,white_black))
 
 # Estrai i colori dalla palette (supponiamo che tu abbia una lista di 10 colori in formato RGB)
 # palette = [
