@@ -4,7 +4,7 @@ from scipy.spatial import cKDTree
 from sklearn.cluster import KMeans
 
 # input
-image_name='IMG_8081.jpg'
+image_name='marte-NASA.jpg'
 
 colori_filo=15
 dim_punto = 10 #ogni quanti pixel tiro la linea
