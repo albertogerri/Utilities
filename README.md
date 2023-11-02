@@ -9,3 +9,6 @@ Do you want to create Secret Santa combinations? Just put inside the names you w
 
 ## zip_archives_auto_creation
 A simple script for putting many files in some zip folders with a maximum designed size.
+
+## Picture to PDF
+A very simple script: you pass an image, the script creates a pdf.
