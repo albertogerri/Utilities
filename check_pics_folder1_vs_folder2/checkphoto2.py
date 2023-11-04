@@ -26,12 +26,12 @@ def funzione(cartella_da_esaminare):
 
 
 # qui leggi i nomi di tutti i file immagine dentro la cartella da controllare e salvali in una lista1
-cartella1=r"C:\Users\Alberto Gerri\Pictures\2022"
+cartella1=r"nome_directory_1"
 # lista1 = os.listdir(cartella1)
 lista1=funzione(cartella1)
 
 # qui leggi i nomi di tutti i file dentro tutte le sottocartelle di una cartella target salvali in una lista_target
-cartella_target=r'D:\archivio foto\2022'
+cartella_target=r'nome_directory_2'
 # sottocartelle=os.listdir(cartella_target)
 listone=funzione(cartella_target)
 
